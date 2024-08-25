@@ -11,24 +11,24 @@
 
       @media (max-width: 1000px) {
         body {
-          background-color: red;
+          background-color: #101010;
         }
+    }
+    .responsive {
+      background-color: #353535;
+      color: #181818;
+      width: 50%;
+    }
+    @media screen and (max-width: 1000px) {
+      .responsive {
+        background-color: #181818;
+        color: #353535;
+        width: 100%;
       }
-
-      @media (max-width: 500px) {
-        body {
-          background-color: blue;
-        }
-      }
-
-      @media (max-width: 200px) {
-        body {
-          background-color: rgb(23, 61, 23);
-        }
-      }
+    }
     </style>
   </head>
-  <body> 
-    Lorum ipsum hehe 
+  <body>
+    <div class="responsive">This is a responsive div</div>
   </body>
 </html>
